@@ -3,7 +3,7 @@ import { Wand2 } from "lucide-react";
 import { Separator } from "../../ui/separator";
 import { Button } from "../../ui/button";
 import { VideoUpload } from "./VideoUpload";
-import { Prompt } from "./Pormpts";
+import { Prompts } from "./Prompts";
 import { Model } from "./Model";
 import { Temperature } from "./Temperature";
 
@@ -15,7 +15,7 @@ export function AsideInputs() {
       <Separator />
 
       <form className="space-y-6">
-        <Prompt />
+        <Prompts />
 
         <Separator />
 

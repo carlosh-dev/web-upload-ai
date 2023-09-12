@@ -1,7 +1,7 @@
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
-export function Prompt() {
+export function Prompts() {
   return (
     <div className="space-y-2">
       <Label>
