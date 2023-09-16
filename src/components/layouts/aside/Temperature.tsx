@@ -1,7 +1,12 @@
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
+import { ComponentProps } from "react";
 
-export function Temperature() {
+interface TemperatureProps extends ComponentProps<typeof Slider> {
+
+}
+
+export function Temperature({ ...props }: TemperatureProps) {
   return (
     <div className="space-y-4">
       <Label>
@@ -9,6 +14,7 @@ export function Temperature() {
       </Label>
 
       <Slider
+        {...props}
         min={0}
         max={1}
         step={0.1}
